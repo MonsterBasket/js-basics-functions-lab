@@ -4,8 +4,8 @@ function distanceFromHqInBlocks(destination, start = homeBase){
     let distance = destination - start;
     return Math.abs(distance);
 }
-function distanceFromHqInFeet(destination){
-    return distanceFromHqInBlocks(destination) * 264;
+function distanceFromHqInFeet(destination){ //totally redundant
+    return distanceTravelledInFeet(destination);
 }
 function distanceTravelledInFeet(destination, start = homeBase){
     return distanceFromHqInBlocks(destination, start) * 264;
